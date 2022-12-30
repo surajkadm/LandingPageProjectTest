@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter","sans-seriff";
+}
+
+.navbar{
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    margin: 0 auto;
+    height: 50px;
+    width: 100%;
+    border-bottom: 2px solid white;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 18px auto;
+    padding: 0 25px;
+    
+}
+
+.right-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-nav .nav-item{
+    padding: 0 15px;
+}
+
+a{
+    text-decoration: none ;
+    color: aliceblue;
+}
+
+
+.section-wrapper{
+    background-color: black;
+    padding: 90px 60px;
+}
+
+.sec{ 
+    color: aliceblue;
+    display: grid;
+    grid-template-columns:60% 30%;
+}
+
+.sec-heading{
+    font-size: 150px;
+    font-weight: 700;
+    animation-duration: 3s;
+    -webkit-animation: fadeIn 3s;
+}
+.section-wrapper .sec .img1{
+    background-color: black;
+    position: inherit;
+    padding-top: 300px;  
+}
+.arrow{
+    background-color: black;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+}
+
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+    
+.about-wrapper{
+    display: grid;
+    grid-template-columns: 35% 60%;
+    justify-content: center;
+    padding: 200px 80px;
+}
+
+.about-main{
+    margin: 0 auto;
+    padding-left: 60px;
+}
+
+.about-main .about-heading{
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.services-wrapper{
+    margin: 80px;
+}
+
+.services-wrapper .our-service-heading{
+    font-size: 50px;
+}
+
+.service-wrapper2{
+    display: grid;
+    grid-template-columns: repeat(3,40%);
+    column-gap: 30px;
+    margin-top: 60px ;
+    overflow-x: scroll;
+    
+}
+
+.service-wrapper2 .service-heading{
+    font-size: 20x;
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+
+
+.service-wrapper2 .service-box{
+    width: 90%;
+    border: 2px solid black;
+}
+
+.service-wrapper2 .service-box:hover{
+    animation: changeBg;
+    animation-delay: 0.3s;
+    -webkit-animation: changeBg 0.3s;
+    
+}
+
+
+@keyframes changeBg {
+   100%{background-color: black; color: white;}
+
+}
+
+.service-box .service-box-wrap{
+    padding: 20px;
+}
+
+
+.service-box .service-info{
+    font-size: 20x;
+    padding: 20px 20px;
+}
+
+.section5{
+    background-color: black;
+}
+
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 180px;
+}
+
+.contact-wrapper .contact-heading{
+    font-size: 30px;
+    color: white;
+    padding: 60px;
+}
+
+input{
+    width: 80vw;
+    height: 40px;
+    color: aliceblue;
+    border: 1px solid white ;
+    background-color:black;
+    margin: 12px 0;
+}
+
+
+.sub-btn{
+    margin-top: 20px;
+    padding:8px 80px ;
+}
